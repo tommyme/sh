@@ -7,7 +7,7 @@ read -p "whether install ssh:(y/n)" ssh
 
 if [[ ${ssh} == "y" ]]
 then
-	wget https://raw.githubusercontent.com/you-bowen/linuxSh/main/sshd_config.txt
+	wget https://raw.githubusercontent.com/you-bowen/sh/main/linux/sshd_config.txt
 	mv sshd_config.txt /etc/ssh/sshd_config
 	systemctl start ssh
 	systemctl enable ssh
